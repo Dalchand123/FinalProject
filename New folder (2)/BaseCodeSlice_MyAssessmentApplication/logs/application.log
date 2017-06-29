@@ -1,0 +1,518 @@
+11:48:41,017 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+11:48:41,019 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+11:48:41,019 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+11:48:41,019 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+11:48:41,019 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+11:48:41,020 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,020 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+11:48:41,020 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+11:48:41,020 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+11:48:41,020 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+11:48:41,021 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+11:48:41,021 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+11:48:41,021 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+11:48:41,021 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+11:48:41,021 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+11:48:41,028 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'homePageController'
+11:48:41,028 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'performTransactionController'
+11:48:41,028 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'performTransactionController'
+11:48:41,029 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,031 DEBUG InjectionMetadata:72 - Registered injected element on class [com.cognizant.controller.PerformTransactionController]: AutowiredFieldElement for com.cognizant.service.PerformTransactionService com.cognizant.controller.PerformTransactionController.service
+11:48:41,031 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'performTransactionController' to allow for resolving potential circular references
+11:48:41,033 DEBUG InjectionMetadata:86 - Processing injected element of bean 'performTransactionController': AutowiredFieldElement for com.cognizant.service.PerformTransactionService com.cognizant.controller.PerformTransactionController.service
+11:48:41,034 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'performTransactionService'
+11:48:41,034 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'performTransactionService'
+11:48:41,034 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,035 DEBUG InjectionMetadata:72 - Registered injected element on class [com.cognizant.service.PerformTransactionService]: AutowiredFieldElement for com.cognizant.dao.PerformTransactionDAO com.cognizant.service.PerformTransactionService.DAO
+11:48:41,036 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'performTransactionService' to allow for resolving potential circular references
+11:48:41,037 DEBUG InjectionMetadata:86 - Processing injected element of bean 'performTransactionService': AutowiredFieldElement for com.cognizant.dao.PerformTransactionDAO com.cognizant.service.PerformTransactionService.DAO
+11:48:41,038 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'performTransactionDAO'
+11:48:41,038 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'performTransactionDAO'
+11:48:41,039 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,039 DEBUG InjectionMetadata:72 - Registered injected element on class [com.cognizant.dao.PerformTransactionDAO]: PersistenceElement for private javax.persistence.EntityManager com.cognizant.dao.PerformTransactionDAO.em
+11:48:41,040 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'performTransactionDAO' to allow for resolving potential circular references
+11:48:41,042 DEBUG InjectionMetadata:86 - Processing injected element of bean 'performTransactionDAO': PersistenceElement for private javax.persistence.EntityManager com.cognizant.dao.PerformTransactionDAO.em
+11:48:41,042 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'entityManagerFactory'
+11:48:41,042 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,043 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,043 DEBUG AnnotationTransactionAttributeSource:107 - Adding transactional method 'PerformTransactionDAO.performTransaction' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+11:48:41,044 DEBUG AnnotationAwareAspectJAutoProxyCreator:540 - Creating implicit proxy for bean 'performTransactionDAO' with 0 common interceptors and 4 specific interceptors
+11:48:41,044 DEBUG CglibAopProxy:156 - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.cognizant.dao.PerformTransactionDAO@515b0e63]
+11:48:41,045 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public void com.cognizant.dao.PerformTransactionDAO.performTransaction(long,com.cognizant.entity.TransactionDetails)
+11:48:41,045 DEBUG AnnotationTransactionAttributeSource:107 - Adding transactional method 'PerformTransactionDAO.retriveDetails' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+11:48:41,046 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public com.cognizant.entity.UserDetails com.cognizant.dao.PerformTransactionDAO.retriveDetails(long)
+11:48:41,046 DEBUG AnnotationTransactionAttributeSource:107 - Adding transactional method 'PerformTransactionDAO.addSingleUser' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+11:48:41,046 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public void com.cognizant.dao.PerformTransactionDAO.addSingleUser(com.cognizant.entity.UserDetails)
+11:48:41,047 DEBUG AnnotationTransactionAttributeSource:107 - Adding transactional method 'PerformTransactionDAO.addNewUser' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+11:48:41,047 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public void com.cognizant.dao.PerformTransactionDAO.addNewUser(com.cognizant.entity.UserDetails)
+11:48:41,047 DEBUG CglibAopProxy:761 - Found finalize() method - using NO_OVERRIDE
+11:48:41,048 DEBUG CglibAopProxy:773 - Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+11:48:41,048 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
+11:48:41,048 DEBUG CglibAopProxy:778 - Found 'hashCode' method: public native int java.lang.Object.hashCode()
+11:48:41,049 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+11:48:41,049 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+11:48:41,049 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+11:48:41,049 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+11:48:41,049 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,050 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,050 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+11:48:41,050 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+11:48:41,050 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+11:48:41,050 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+11:48:41,051 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+11:48:41,051 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+11:48:41,051 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+11:48:41,051 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+11:48:41,051 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,052 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+11:48:41,052 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+11:48:41,052 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+11:48:41,052 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+11:48:41,052 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+11:48:41,053 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+11:48:41,053 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+11:48:41,053 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+11:48:41,053 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+11:48:41,061 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'performTransactionDAO'
+11:48:41,062 DEBUG AutowiredAnnotationBeanPostProcessor:450 - Autowiring by type from bean name 'performTransactionService' to bean named 'performTransactionDAO'
+11:48:41,062 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,062 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,063 DEBUG AnnotationAwareAspectJAutoProxyCreator:540 - Creating implicit proxy for bean 'performTransactionService' with 0 common interceptors and 3 specific interceptors
+11:48:41,064 DEBUG CglibAopProxy:156 - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.cognizant.service.PerformTransactionService@71da0bb7]
+11:48:41,064 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public void com.cognizant.service.PerformTransactionService.performTransaction(long,com.cognizant.entity.TransactionDetails) throws com.cognizant.exception.BankManagementException
+11:48:41,065 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public com.cognizant.entity.UserDetails com.cognizant.service.PerformTransactionService.retriveDetails(long)
+11:48:41,065 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public void com.cognizant.service.PerformTransactionService.addSingleUser(com.cognizant.entity.UserDetails)
+11:48:41,066 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public void com.cognizant.service.PerformTransactionService.addUser(com.cognizant.entity.UserDetails,com.cognizant.entity.TransactionDetails)
+11:48:41,066 DEBUG CglibAopProxy:761 - Found finalize() method - using NO_OVERRIDE
+11:48:41,066 DEBUG CglibAopProxy:773 - Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+11:48:41,067 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
+11:48:41,067 DEBUG CglibAopProxy:778 - Found 'hashCode' method: public native int java.lang.Object.hashCode()
+11:48:41,067 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+11:48:41,067 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+11:48:41,067 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+11:48:41,068 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+11:48:41,068 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,068 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,068 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+11:48:41,068 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+11:48:41,069 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+11:48:41,070 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+11:48:41,070 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+11:48:41,071 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+11:48:41,071 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+11:48:41,071 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+11:48:41,071 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,071 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+11:48:41,072 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+11:48:41,072 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+11:48:41,072 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+11:48:41,072 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+11:48:41,073 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+11:48:41,073 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+11:48:41,073 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+11:48:41,073 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+11:48:41,081 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'performTransactionService'
+11:48:41,081 DEBUG AutowiredAnnotationBeanPostProcessor:450 - Autowiring by type from bean name 'performTransactionController' to bean named 'performTransactionService'
+11:48:41,081 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,082 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,083 DEBUG AnnotationAwareAspectJAutoProxyCreator:540 - Creating implicit proxy for bean 'performTransactionController' with 0 common interceptors and 3 specific interceptors
+11:48:41,083 DEBUG CglibAopProxy:156 - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.cognizant.controller.PerformTransactionController@44cf2e58]
+11:48:41,084 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public java.lang.String com.cognizant.controller.PerformTransactionController.performTransaction1(com.cognizant.entity.TransactionDetails,org.springframework.validation.BindingResult,java.lang.String,org.springframework.ui.Model)
+11:48:41,084 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public java.util.Map com.cognizant.controller.PerformTransactionController.gettransactionTypeList()
+11:48:41,085 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public java.lang.String com.cognizant.controller.PerformTransactionController.getTransaction(java.lang.String,org.springframework.ui.Model)
+11:48:41,085 DEBUG CglibAopProxy:761 - Found finalize() method - using NO_OVERRIDE
+11:48:41,085 DEBUG CglibAopProxy:773 - Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+11:48:41,086 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
+11:48:41,086 DEBUG CglibAopProxy:778 - Found 'hashCode' method: public native int java.lang.Object.hashCode()
+11:48:41,086 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+11:48:41,086 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+11:48:41,087 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+11:48:41,087 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+11:48:41,087 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,087 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,087 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+11:48:41,087 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+11:48:41,088 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+11:48:41,088 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+11:48:41,088 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+11:48:41,088 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+11:48:41,088 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+11:48:41,088 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+11:48:41,089 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,089 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+11:48:41,089 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+11:48:41,089 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+11:48:41,089 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+11:48:41,089 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+11:48:41,090 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+11:48:41,090 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+11:48:41,090 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+11:48:41,090 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+11:48:41,097 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'performTransactionController'
+11:48:41,097 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'viewEducationLoanController'
+11:48:41,098 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'viewEducationLoanController'
+11:48:41,098 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,100 DEBUG InjectionMetadata:72 - Registered injected element on class [com.cognizant.controller.ViewEducationLoanController]: AutowiredFieldElement for com.cognizant.service.ViewEducationLoanService com.cognizant.controller.ViewEducationLoanController.service
+11:48:41,100 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'viewEducationLoanController' to allow for resolving potential circular references
+11:48:41,102 DEBUG InjectionMetadata:86 - Processing injected element of bean 'viewEducationLoanController': AutowiredFieldElement for com.cognizant.service.ViewEducationLoanService com.cognizant.controller.ViewEducationLoanController.service
+11:48:41,103 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'viewEducationLoanService'
+11:48:41,103 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'viewEducationLoanService'
+11:48:41,103 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,104 DEBUG InjectionMetadata:72 - Registered injected element on class [com.cognizant.service.ViewEducationLoanService]: AutowiredFieldElement for com.cognizant.dao.ViewEducationLoanDAO com.cognizant.service.ViewEducationLoanService.vld
+11:48:41,104 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'viewEducationLoanService' to allow for resolving potential circular references
+11:48:41,105 DEBUG InjectionMetadata:86 - Processing injected element of bean 'viewEducationLoanService': AutowiredFieldElement for com.cognizant.dao.ViewEducationLoanDAO com.cognizant.service.ViewEducationLoanService.vld
+11:48:41,106 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'viewEducationLoanDAO'
+11:48:41,106 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'viewEducationLoanDAO'
+11:48:41,106 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,107 DEBUG InjectionMetadata:72 - Registered injected element on class [com.cognizant.dao.ViewEducationLoanDAO]: PersistenceElement for private javax.persistence.EntityManager com.cognizant.dao.ViewEducationLoanDAO.em
+11:48:41,108 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'viewEducationLoanDAO' to allow for resolving potential circular references
+11:48:41,109 DEBUG InjectionMetadata:86 - Processing injected element of bean 'viewEducationLoanDAO': PersistenceElement for private javax.persistence.EntityManager com.cognizant.dao.ViewEducationLoanDAO.em
+11:48:41,109 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'entityManagerFactory'
+11:48:41,110 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,110 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,110 DEBUG AnnotationTransactionAttributeSource:107 - Adding transactional method 'ViewEducationLoanDAO.retrieveEducationLoanDetails' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+11:48:41,111 DEBUG AnnotationAwareAspectJAutoProxyCreator:540 - Creating implicit proxy for bean 'viewEducationLoanDAO' with 0 common interceptors and 4 specific interceptors
+11:48:41,112 DEBUG CglibAopProxy:156 - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.cognizant.dao.ViewEducationLoanDAO@2f06510d]
+11:48:41,113 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public com.cognizant.entity.UserDetails com.cognizant.dao.ViewEducationLoanDAO.retrieveEducationLoanDetails(long)
+11:48:41,113 DEBUG CglibAopProxy:761 - Found finalize() method - using NO_OVERRIDE
+11:48:41,113 DEBUG CglibAopProxy:773 - Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+11:48:41,120 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
+11:48:41,120 DEBUG CglibAopProxy:778 - Found 'hashCode' method: public native int java.lang.Object.hashCode()
+11:48:41,121 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+11:48:41,121 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+11:48:41,121 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+11:48:41,122 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+11:48:41,122 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,122 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,123 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+11:48:41,123 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+11:48:41,123 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+11:48:41,123 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+11:48:41,124 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+11:48:41,124 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+11:48:41,124 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+11:48:41,124 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+11:48:41,125 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,125 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+11:48:41,125 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+11:48:41,125 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+11:48:41,126 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+11:48:41,126 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+11:48:41,126 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+11:48:41,127 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+11:48:41,127 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+11:48:41,127 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+11:48:41,134 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'viewEducationLoanDAO'
+11:48:41,135 DEBUG AutowiredAnnotationBeanPostProcessor:450 - Autowiring by type from bean name 'viewEducationLoanService' to bean named 'viewEducationLoanDAO'
+11:48:41,135 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,135 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,136 DEBUG AnnotationTransactionAttributeSource:107 - Adding transactional method 'ViewEducationLoanService.retrieveEducationLoanDetails' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+11:48:41,137 DEBUG AnnotationAwareAspectJAutoProxyCreator:540 - Creating implicit proxy for bean 'viewEducationLoanService' with 0 common interceptors and 4 specific interceptors
+11:48:41,138 DEBUG CglibAopProxy:156 - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.cognizant.service.ViewEducationLoanService@32068fe4]
+11:48:41,139 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public com.cognizant.entity.UserDetails com.cognizant.service.ViewEducationLoanService.retrieveEducationLoanDetails(long)
+11:48:41,139 DEBUG CglibAopProxy:761 - Found finalize() method - using NO_OVERRIDE
+11:48:41,139 DEBUG CglibAopProxy:773 - Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+11:48:41,140 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
+11:48:41,140 DEBUG CglibAopProxy:778 - Found 'hashCode' method: public native int java.lang.Object.hashCode()
+11:48:41,141 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+11:48:41,141 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+11:48:41,141 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+11:48:41,142 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+11:48:41,142 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,142 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,142 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+11:48:41,143 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+11:48:41,143 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+11:48:41,143 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+11:48:41,143 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+11:48:41,143 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+11:48:41,144 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+11:48:41,144 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+11:48:41,144 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,144 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+11:48:41,145 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+11:48:41,145 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+11:48:41,145 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+11:48:41,145 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+11:48:41,146 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+11:48:41,146 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+11:48:41,146 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+11:48:41,146 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+11:48:41,154 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'viewEducationLoanService'
+11:48:41,154 DEBUG AutowiredAnnotationBeanPostProcessor:450 - Autowiring by type from bean name 'viewEducationLoanController' to bean named 'viewEducationLoanService'
+11:48:41,155 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,155 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,157 DEBUG AnnotationAwareAspectJAutoProxyCreator:540 - Creating implicit proxy for bean 'viewEducationLoanController' with 0 common interceptors and 3 specific interceptors
+11:48:41,157 DEBUG CglibAopProxy:156 - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.cognizant.controller.ViewEducationLoanController@3285b34]
+11:48:41,158 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public java.lang.String com.cognizant.controller.ViewEducationLoanController.getJsp(org.springframework.ui.Model,java.lang.String)
+11:48:41,159 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public java.util.List com.cognizant.controller.ViewEducationLoanController.getEmployees(org.springframework.ui.Model,java.lang.String)
+11:48:41,159 DEBUG CglibAopProxy:761 - Found finalize() method - using NO_OVERRIDE
+11:48:41,160 DEBUG CglibAopProxy:773 - Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+11:48:41,160 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
+11:48:41,160 DEBUG CglibAopProxy:778 - Found 'hashCode' method: public native int java.lang.Object.hashCode()
+11:48:41,161 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+11:48:41,161 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+11:48:41,161 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+11:48:41,161 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+11:48:41,162 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,162 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,162 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+11:48:41,162 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+11:48:41,162 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+11:48:41,163 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+11:48:41,163 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+11:48:41,163 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+11:48:41,163 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+11:48:41,164 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+11:48:41,164 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,164 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+11:48:41,164 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+11:48:41,164 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+11:48:41,165 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+11:48:41,165 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+11:48:41,165 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+11:48:41,165 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+11:48:41,166 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+11:48:41,166 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+11:48:41,175 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'viewEducationLoanController'
+11:48:41,175 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'viewHomeLoanController'
+11:48:41,176 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'viewHomeLoanController'
+11:48:41,176 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,178 DEBUG InjectionMetadata:72 - Registered injected element on class [com.cognizant.controller.ViewHomeLoanController]: AutowiredFieldElement for com.cognizant.service.ViewHomeLoanService com.cognizant.controller.ViewHomeLoanController.viewHome
+11:48:41,178 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'viewHomeLoanController' to allow for resolving potential circular references
+11:48:41,180 DEBUG InjectionMetadata:86 - Processing injected element of bean 'viewHomeLoanController': AutowiredFieldElement for com.cognizant.service.ViewHomeLoanService com.cognizant.controller.ViewHomeLoanController.viewHome
+11:48:41,181 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'viewHomeLoanService'
+11:48:41,181 DEBUG AutowiredAnnotationBeanPostProcessor:450 - Autowiring by type from bean name 'viewHomeLoanController' to bean named 'viewHomeLoanService'
+11:48:41,181 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,182 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,183 DEBUG AnnotationAwareAspectJAutoProxyCreator:540 - Creating implicit proxy for bean 'viewHomeLoanController' with 0 common interceptors and 3 specific interceptors
+11:48:41,184 DEBUG CglibAopProxy:156 - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.cognizant.controller.ViewHomeLoanController@3c0c7b82]
+11:48:41,185 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public java.lang.String com.cognizant.controller.ViewHomeLoanController.getHomeLoanDetails(org.springframework.ui.Model,java.lang.String)
+11:48:41,185 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public java.util.List com.cognizant.controller.ViewHomeLoanController.getEmployees(org.springframework.ui.Model,java.lang.String)
+11:48:41,186 DEBUG CglibAopProxy:761 - Found finalize() method - using NO_OVERRIDE
+11:48:41,186 DEBUG CglibAopProxy:773 - Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+11:48:41,186 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
+11:48:41,186 DEBUG CglibAopProxy:778 - Found 'hashCode' method: public native int java.lang.Object.hashCode()
+11:48:41,187 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+11:48:41,187 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+11:48:41,187 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+11:48:41,187 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+11:48:41,188 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,188 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,188 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+11:48:41,188 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+11:48:41,189 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+11:48:41,189 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+11:48:41,189 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+11:48:41,189 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+11:48:41,189 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+11:48:41,190 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+11:48:41,190 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,190 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+11:48:41,190 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+11:48:41,191 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+11:48:41,191 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+11:48:41,191 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+11:48:41,191 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+11:48:41,191 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+11:48:41,192 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+11:48:41,192 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+11:48:41,199 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'viewHomeLoanController'
+11:48:41,200 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'viewTransactionController'
+11:48:41,200 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'viewTransactionController'
+11:48:41,201 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,202 DEBUG InjectionMetadata:72 - Registered injected element on class [com.cognizant.controller.ViewTransactionController]: AutowiredFieldElement for com.cognizant.service.PerformTransactionService com.cognizant.controller.ViewTransactionController.service
+11:48:41,203 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'viewTransactionController' to allow for resolving potential circular references
+11:48:41,205 DEBUG InjectionMetadata:86 - Processing injected element of bean 'viewTransactionController': AutowiredFieldElement for com.cognizant.service.PerformTransactionService com.cognizant.controller.ViewTransactionController.service
+11:48:41,205 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'performTransactionService'
+11:48:41,206 DEBUG AutowiredAnnotationBeanPostProcessor:450 - Autowiring by type from bean name 'viewTransactionController' to bean named 'performTransactionService'
+11:48:41,206 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,206 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,208 DEBUG AnnotationAwareAspectJAutoProxyCreator:540 - Creating implicit proxy for bean 'viewTransactionController' with 0 common interceptors and 3 specific interceptors
+11:48:41,208 DEBUG CglibAopProxy:156 - Creating CGLIB proxy: target source is SingletonTargetSource for target object [com.cognizant.controller.ViewTransactionController@26f1e633]
+11:48:41,210 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public java.util.List com.cognizant.controller.ViewTransactionController.getEmployees(org.springframework.ui.Model,java.lang.String)
+11:48:41,211 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public java.lang.String com.cognizant.controller.ViewTransactionController.getTransaction(org.springframework.ui.Model,java.lang.String)
+11:48:41,211 DEBUG CglibAopProxy:761 - Found finalize() method - using NO_OVERRIDE
+11:48:41,211 DEBUG CglibAopProxy:773 - Found 'equals' method: public boolean java.lang.Object.equals(java.lang.Object)
+11:48:41,212 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: public java.lang.String java.lang.Object.toString()
+11:48:41,212 DEBUG CglibAopProxy:778 - Found 'hashCode' method: public native int java.lang.Object.hashCode()
+11:48:41,212 DEBUG CglibAopProxy:810 - Unable to apply any optimisations to advised method: protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+11:48:41,219 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.springframework.aop.Advisor)
+11:48:41,219 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract int org.springframework.aop.framework.Advised.indexOf(org.aopalliance.aop.Advice)
+11:48:41,219 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isFrozen()
+11:48:41,219 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(int,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,220 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvisor(org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,220 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isExposeProxy()
+11:48:41,220 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract org.springframework.aop.TargetSource org.springframework.aop.framework.Advised.getTargetSource()
+11:48:41,220 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setTargetSource(org.springframework.aop.TargetSource)
+11:48:41,220 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setPreFiltered(boolean)
+11:48:41,221 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isProxyTargetClass()
+11:48:41,221 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.setExposeProxy(boolean)
+11:48:41,221 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.Class[] org.springframework.aop.framework.Advised.getProxiedInterfaces()
+11:48:41,221 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isInterfaceProxied(java.lang.Class)
+11:48:41,221 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.replaceAdvisor(org.springframework.aop.Advisor,org.springframework.aop.Advisor) throws org.springframework.aop.framework.AopConfigException
+11:48:41,222 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.String org.springframework.aop.framework.Advised.toProxyConfigString()
+11:48:41,222 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract org.springframework.aop.Advisor[] org.springframework.aop.framework.Advised.getAdvisors()
+11:48:41,222 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+11:48:41,222 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.addAdvice(int,org.aopalliance.aop.Advice) throws org.springframework.aop.framework.AopConfigException
+11:48:41,222 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.isPreFiltered()
+11:48:41,223 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvisor(org.springframework.aop.Advisor)
+11:48:41,223 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract void org.springframework.aop.framework.Advised.removeAdvisor(int) throws org.springframework.aop.framework.AopConfigException
+11:48:41,223 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract boolean org.springframework.aop.framework.Advised.removeAdvice(org.aopalliance.aop.Advice)
+11:48:41,223 DEBUG CglibAopProxy:767 - Method is declared on Advised interface: public abstract java.lang.Class org.springframework.aop.TargetClassAware.getTargetClass()
+11:48:41,236 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'viewTransactionController'
+11:48:41,237 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'applyEducationLoanDAO'
+11:48:41,237 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'applyHomeLoanDAO'
+11:48:41,237 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'performTransactionDAO'
+11:48:41,237 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'viewEducationLoanDAO'
+11:48:41,238 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'viewHomeLoanDAO'
+11:48:41,238 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'applyEducationLoanService'
+11:48:41,238 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'applyHomeLoanService'
+11:48:41,238 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'performTransactionService'
+11:48:41,238 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'viewEducationLoanService'
+11:48:41,239 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'viewHomeLoanService'
+11:48:41,239 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'messageSource'
+11:48:41,239 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'localeResolver'
+11:48:41,239 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'localeResolver'
+11:48:41,239 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,240 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'localeResolver' to allow for resolving potential circular references
+11:48:41,252 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,253 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,256 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'localeResolver'
+11:48:41,257 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'localeChangeInterceptor'
+11:48:41,257 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'localeChangeInterceptor'
+11:48:41,257 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,258 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'localeChangeInterceptor' to allow for resolving potential circular references
+11:48:41,262 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,263 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,268 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'localeChangeInterceptor'
+11:48:41,269 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping#0'
+11:48:41,269 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping#0'
+11:48:41,272 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,282 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping#0' to allow for resolving potential circular references
+11:48:41,296 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'localeChangeInterceptor'
+11:48:41,298 DEBUG ControllerClassNameHandlerMapping:71 - Looking for URL mappings in application context: org.springframework.context.support.GenericApplicationContext@3618a665: startup date [Wed Jun 28 11:48:32 IST 2017]; root of context hierarchy
+11:48:41,299 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified
+11:48:41,300 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': no URL paths identified
+11:48:41,300 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'org.springframework.transaction.interceptor.TransactionInterceptor#0': no URL paths identified
+11:48:41,300 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'org.springframework.transaction.config.internalTransactionAdvisor': no URL paths identified
+11:48:41,301 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+11:48:41,301 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+11:48:41,301 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+11:48:41,301 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+11:48:41,302 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor': no URL paths identified
+11:48:41,302 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'loggerAspect': no URL paths identified
+11:48:41,304 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'applyEducationLoanController'
+11:48:41,305  INFO ControllerClassNameHandlerMapping:315 - Mapped URL path [/applyeducationloan] onto handler 'applyEducationLoanController'
+11:48:41,305 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'applyEducationLoanController'
+11:48:41,305  INFO ControllerClassNameHandlerMapping:315 - Mapped URL path [/applyeducationloan/*] onto handler 'applyEducationLoanController'
+11:48:41,306 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'applyHomeLoanController'
+11:48:41,306  INFO ControllerClassNameHandlerMapping:315 - Mapped URL path [/applyhomeloan] onto handler 'applyHomeLoanController'
+11:48:41,306 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'applyHomeLoanController'
+11:48:41,306  INFO ControllerClassNameHandlerMapping:315 - Mapped URL path [/applyhomeloan/*] onto handler 'applyHomeLoanController'
+11:48:41,307 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'homePageController'
+11:48:41,307  INFO ControllerClassNameHandlerMapping:315 - Mapped URL path [/homepage] onto handler 'homePageController'
+11:48:41,307 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'homePageController'
+11:48:41,307  INFO ControllerClassNameHandlerMapping:315 - Mapped URL path [/homepage/*] onto handler 'homePageController'
+11:48:41,307 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'performTransactionController'
+11:48:41,308  INFO ControllerClassNameHandlerMapping:315 - Mapped URL path [/performtransaction] onto handler 'performTransactionController'
+11:48:41,308 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'performTransactionController'
+11:48:41,308  INFO ControllerClassNameHandlerMapping:315 - Mapped URL path [/performtransaction/*] onto handler 'performTransactionController'
+11:48:41,308 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'viewEducationLoanController'
+11:48:41,309  INFO ControllerClassNameHandlerMapping:315 - Mapped URL path [/vieweducationloan] onto handler 'viewEducationLoanController'
+11:48:41,309 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'viewEducationLoanController'
+11:48:41,309  INFO ControllerClassNameHandlerMapping:315 - Mapped URL path [/vieweducationloan/*] onto handler 'viewEducationLoanController'
+11:48:41,309 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'viewHomeLoanController'
+11:48:41,310  INFO ControllerClassNameHandlerMapping:315 - Mapped URL path [/viewhomeloan] onto handler 'viewHomeLoanController'
+11:48:41,310 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'viewHomeLoanController'
+11:48:41,310  INFO ControllerClassNameHandlerMapping:315 - Mapped URL path [/viewhomeloan/*] onto handler 'viewHomeLoanController'
+11:48:41,310 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'viewTransactionController'
+11:48:41,310  INFO ControllerClassNameHandlerMapping:315 - Mapped URL path [/viewtransaction] onto handler 'viewTransactionController'
+11:48:41,311 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'viewTransactionController'
+11:48:41,311  INFO ControllerClassNameHandlerMapping:315 - Mapped URL path [/viewtransaction/*] onto handler 'viewTransactionController'
+11:48:41,311 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'applyEducationLoanDAO': no URL paths identified
+11:48:41,311 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'applyHomeLoanDAO': no URL paths identified
+11:48:41,311 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'performTransactionDAO': no URL paths identified
+11:48:41,312 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'viewEducationLoanDAO': no URL paths identified
+11:48:41,312 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'viewHomeLoanDAO': no URL paths identified
+11:48:41,312 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'applyEducationLoanService': no URL paths identified
+11:48:41,312 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'applyHomeLoanService': no URL paths identified
+11:48:41,313 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'performTransactionService': no URL paths identified
+11:48:41,313 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'viewEducationLoanService': no URL paths identified
+11:48:41,313 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'viewHomeLoanService': no URL paths identified
+11:48:41,313 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'messageSource': no URL paths identified
+11:48:41,313 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'localeResolver': no URL paths identified
+11:48:41,314 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'localeChangeInterceptor': no URL paths identified
+11:48:41,314 DEBUG ControllerClassNameHandlerMapping:120 - Excluding controller bean 'org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping#0' from class name mapping because its bean class is defined in an excluded package: org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping
+11:48:41,314 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping#0': no URL paths identified
+11:48:41,314 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'dataSource': no URL paths identified
+11:48:41,315 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'entityManagerFactory': no URL paths identified
+11:48:41,315 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'transactionManager': no URL paths identified
+11:48:41,315 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+11:48:41,315 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'environment': no URL paths identified
+11:48:41,315 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'systemProperties': no URL paths identified
+11:48:41,317 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'systemEnvironment': no URL paths identified
+11:48:41,317 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+11:48:41,318 DEBUG ControllerClassNameHandlerMapping:86 - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+11:48:41,318 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,318 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,389 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping#0'
+11:48:41,390 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'dataSource'
+11:48:41,390 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'entityManagerFactory'
+11:48:41,391 DEBUG DefaultListableBeanFactory:215 - Creating shared instance of singleton bean 'transactionManager'
+11:48:41,391 DEBUG DefaultListableBeanFactory:432 - Creating instance of bean 'transactionManager'
+11:48:41,391 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,403 DEBUG DefaultListableBeanFactory:506 - Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+11:48:41,408 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'entityManagerFactory'
+11:48:41,409 DEBUG DefaultListableBeanFactory:1557 - Invoking afterPropertiesSet() on bean with name 'transactionManager'
+11:48:41,410 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,411 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,431 DEBUG DefaultListableBeanFactory:460 - Finished creating instance of bean 'transactionManager'
+11:48:41,431 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+11:48:41,433 DEBUG GenericApplicationContext:863 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@62febdbe]
+11:48:41,435 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'lifecycleProcessor'
+11:48:41,437 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+11:48:41,438 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+11:48:41,438 DEBUG PropertySourcesPropertyResolver:103 - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+11:48:41,439 DEBUG CacheAwareContextLoaderDelegate:97 - Storing ApplicationContext in cache under key [[MergedContextConfiguration@222bbc83 testClass = ApplyHomeLoanTest, locations = '{classpath:beans.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+11:48:41,439 DEBUG cache:114 - Spring test ApplicationContext cache statistics: [ContextCache@3b372c26 size = 1, hitCount = 0, missCount = 1, parentContextCount = 0]
+11:48:41,442 DEBUG InjectionMetadata:86 - Processing injected element of bean 'com.cog.test.ApplyHomeLoanTest': AutowiredFieldElement for com.cognizant.dao.ApplyHomeLoanDAO com.cog.test.ApplyHomeLoanTest.homeLoan
+11:48:41,442 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'applyHomeLoanDAO'
+11:48:41,443 DEBUG AutowiredAnnotationBeanPostProcessor:450 - Autowiring by type from bean name 'com.cog.test.ApplyHomeLoanTest' to bean named 'applyHomeLoanDAO'
+11:48:41,443 DEBUG InjectionMetadata:86 - Processing injected element of bean 'com.cog.test.ApplyHomeLoanTest': AutowiredFieldElement for com.cognizant.service.ApplyHomeLoanService com.cog.test.ApplyHomeLoanTest.homeLoanService
+11:48:41,443 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'applyHomeLoanService'
+11:48:41,444 DEBUG AutowiredAnnotationBeanPostProcessor:450 - Autowiring by type from bean name 'com.cog.test.ApplyHomeLoanTest' to bean named 'applyHomeLoanService'
+11:48:41,444 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,444 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+11:48:41,454 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'transactionManager'
+11:48:41,460 DEBUG JpaTransactionManager:366 - Creating new transaction with name [com.cognizant.dao.ApplyHomeLoanDAO.applyHomeLoanUserDetails]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+11:48:41,536 DEBUG JpaTransactionManager:368 - Opened new EntityManager [org.hibernate.ejb.EntityManagerImpl@4b42163c] for JPA transaction
+11:48:41,539 DEBUG DriverManagerDataSource:162 - Creating new JDBC DriverManager Connection to [jdbc:mysql://localhost:3306/bank]
+11:48:41,564 DEBUG JpaTransactionManager:400 - Exposing JPA transaction as JDBC transaction [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1dd1b36]
+11:48:41,566 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'loggerAspect'
+11:48:41,567  WARN LoggerAspect:22 - Join point kind : method-execution
+11:48:41,568  WARN LoggerAspect:23 - Signature declaring type : com.cognizant.dao.ApplyHomeLoanDAO
+11:48:41,569  WARN LoggerAspect:24 - Signature name : applyHomeLoanUserDetails
+11:48:41,569  WARN LoggerAspect:25 - Arguments : [UserDetails [accountNumber=4161000100125568, accountType=Savings, accountHolderName=Rohit Sharma, accountBalance=75000.0]]
+11:48:41,569  WARN LoggerAspect:26 - Target class : com.cognizant.dao.ApplyHomeLoanDAO
+11:48:41,569  WARN LoggerAspect:27 - This class : com.cognizant.dao.ApplyHomeLoanDAO$$EnhancerBySpringCGLIB$$14009b78
+11:48:41,585 DEBUG ApplyHomeLoanDAO:21 - In ApplyHomeLoanDAO in applyHomeLoanUserDetails method  
+11:48:41,614  WARN LoggerAspect:34 - Exiting from Method :applyHomeLoanUserDetails
+11:48:41,614  WARN LoggerAspect:35 - Return value :true
+11:48:41,615 DEBUG JpaTransactionManager:753 - Initiating transaction commit
+11:48:41,615 DEBUG JpaTransactionManager:509 - Committing JPA transaction on EntityManager [org.hibernate.ejb.EntityManagerImpl@4b42163c]
+11:48:41,661 TRACE BasicBinder:83 - binding parameter [1] as [DOUBLE] - 75000.0
+11:48:41,662 TRACE BasicBinder:83 - binding parameter [2] as [VARCHAR] - Rohit Sharma
+11:48:41,663 TRACE BasicBinder:83 - binding parameter [3] as [VARCHAR] - Savings
+11:48:41,664 TRACE BasicBinder:83 - binding parameter [4] as [BIGINT] - 4161000100125568
+11:48:41,718 DEBUG JpaTransactionManager:595 - Closing JPA EntityManager [org.hibernate.ejb.EntityManagerImpl@4b42163c] after transaction
+11:48:41,718 DEBUG EntityManagerFactoryUtils:338 - Closing JPA EntityManager
+11:48:41,721 DEBUG DirtiesContextTestExecutionListener:107 - After test method: context [[TestContext@38d8415 testClass = ApplyHomeLoanTest, testInstance = com.cog.test.ApplyHomeLoanTest@3fda8085, testMethod = applyHomeLoanUserDetailsTestMethod@ApplyHomeLoanTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@222bbc83 testClass = ApplyHomeLoanTest, locations = '{classpath:beans.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]], class dirties context [false], class mode [null], method dirties context [false].
+11:48:41,722 DEBUG DirtiesContextTestExecutionListener:138 - After test class: context [[TestContext@38d8415 testClass = ApplyHomeLoanTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@222bbc83 testClass = ApplyHomeLoanTest, locations = '{classpath:beans.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]], dirtiesContext [false].
+11:48:41,724  INFO GenericApplicationContext:1048 - Closing org.springframework.context.support.GenericApplicationContext@3618a665: startup date [Wed Jun 28 11:48:32 IST 2017]; root of context hierarchy
+11:48:41,725 DEBUG DefaultListableBeanFactory:243 - Returning cached instance of singleton bean 'lifecycleProcessor'
+11:48:41,725  INFO DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c25c793: defining beans [org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,loggerAspect,applyEducationLoanController,applyHomeLoanController,homePageController,performTransactionController,viewEducationLoanController,viewHomeLoanController,viewTransactionController,applyEducationLoanDAO,applyHomeLoanDAO,performTransactionDAO,viewEducationLoanDAO,viewHomeLoanDAO,applyEducationLoanService,applyHomeLoanService,performTransactionService,viewEducationLoanService,viewHomeLoanService,messageSource,localeResolver,localeChangeInterceptor,org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping#0,dataSource,entityManagerFactory,transactionManager,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+11:48:41,727 DEBUG DefaultListableBeanFactory:500 - Retrieved dependent beans for bean 'applyHomeLoanService': [com.cog.test.ApplyHomeLoanTest]
+11:48:41,727 DEBUG DisposableBeanAdapter:227 - Invoking destroy() on bean with name 'entityManagerFactory'
+11:48:41,727  INFO LocalContainerEntityManagerFactoryBean:441 - Closing JPA EntityManagerFactory for persistence unit 'jpaData'
+11:48:41,728 DEBUG DefaultListableBeanFactory:500 - Retrieved dependent beans for bean 'org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter#412b7140': [entityManagerFactory]
